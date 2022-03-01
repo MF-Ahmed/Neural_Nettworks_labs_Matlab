@@ -1,0 +1,6 @@
+
+function out=nn(x,w,t)
+  [m c]=min(dist2(w,x));
+  out = t(c',:);
+end
+%x = data to classify, w = training set, t = target classes
